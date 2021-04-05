@@ -6,6 +6,7 @@ function validateEmail(event) {
   let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
   let emailBox = document.querySelector("#email");
+  let blankText = document.querySelector(".blank-text");
   let errorText = document.querySelector(".error-text");
 
   //   Grabbing the email provided by the user
@@ -14,10 +15,16 @@ function validateEmail(event) {
   if (inputEmail.match(mailformat)) {
     emailBox.classList.remove("active");
     errorText.classList.remove("active");
+    blankText.classList.remove("active");
     return true;
+  } else if (inputEmail === "") {
+    emailBox.classList.add("active");
+    errorText.classList.remove("active");
+    blankText.classList.add("active");
   } else {
     emailBox.classList.add("active");
     errorText.classList.add("active");
+    blankText.classList.remove("active");
     return false;
   }
 }

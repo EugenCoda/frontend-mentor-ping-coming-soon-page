@@ -123,7 +123,8 @@ p.subscribe {
   opacity: 0.8;
 }
 
-.error-text {
+.error-text,
+.blank-text {
   display: none;
   color: var(--light-red);
   font-size: 0.6rem;
@@ -133,6 +134,10 @@ p.subscribe {
 }
 
 .error-text.active {
+  display: block;
+}
+
+.blank-text.active {
   display: block;
 }
 
@@ -235,7 +240,8 @@ p.subscribe {
     padding: 12px 25px;
   }
 
-  .error-text {
+  .error-text,
+  .blank-text {
     text-align: center;
     margin-left: 0;
   }
