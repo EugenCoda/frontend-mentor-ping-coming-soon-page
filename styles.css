@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  width: 100%;
+  /* height: 100vh; */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+header img {
+  width: 80%;
+}
+
+h1 {
+  font-size: 1.9rem;
+  font-weight: 300;
+  color: var(--gray);
+  margin-bottom: 15px;
+}
+
+h1 b {
+  color: var(--very-dark-blue);
+}
+
+p.subscribe {
+  margin-bottom: 30px;
+  font-size: 0.8rem;
+}
+
+.email-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+  font-size: 0.7rem;
+}
+
+#email {
+  border: 1px solid var(--gray);
+  border-radius: 100px;
+  padding: 16px 25px;
+  width: 350px;
+  color: var(--gray);
+  margin-right: 10px;
+  opacity: 0.3;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  background-color: var(--blue);
+  color: white;
+  padding: 16px 25px;
+  width: 170px;
+  font-weight: 600;
+  box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.error-text {
+  display: none;
+}
+
+.main-image {
+  width: 42%;
+  min-width: 500px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.social-media {
+  width: 100px;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--blue);
+  font-size: 0.9rem;
+}
+
+.circle-icon {
+  background: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 17px;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.copyright {
+  font-size: 0.5rem;
+  color: var(--gray);
+  margin-bottom: 30px;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--light-red);
+}
+
+@media (max-width: 600px) {
+  body {
+    height: 120vh;
+  }
+
+  section {
+    padding: 80px 0 0 0;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  header img {
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  p.subscribe {
+    margin-bottom: 30px;
+    font-size: 0.6rem;
+  }
+
+  #form1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #email {
+    width: 75%;
+    margin-right: 0;
+    margin-bottom: 12px;
+    padding: 12px 25px;
+  }
+
+  .btn {
+    width: 75%;
+    padding: 12px 25px;
+  }
+
+  .main-image {
+    width: 42%;
+    min-width: 310px;
+    height: auto;
+    margin-bottom: 120px;
+  }
+
+  .social-media {
+    width: 100px;
+    margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--blue);
+    font-size: 1rem;
+  }
+
+  .circle-icon {
+    background: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16px;
+    vertical-align: middle;
+    padding: 7px;
+  }
+
+  /* Attribution */
+  .attribution {
+    max-width: 200px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+}
