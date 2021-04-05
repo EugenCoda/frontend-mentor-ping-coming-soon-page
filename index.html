@@ -29,15 +29,17 @@
       <p class="subscribe">Subscribe and get notified</p>
       <div class="email-form">
         <form name="form1" id="form1" method="post">
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder="Your email address..."
-          />
+          <div class="email-input">
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email address..."
+            />
+            <p class="error-text">Please provide a valid email address</p>
+          </div>
           <button class="btn" type="submit">Notify Me</button>
         </form>
-        <p class="error-text">Please provide a valid email address</p>
       </div>
       <img
         class="main-image"
